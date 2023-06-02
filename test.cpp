@@ -3,7 +3,12 @@
 #include <vector>
 using namespace std;
 
+// C++ class MySub
 class MySub {
+
+// name of the newspapers and their prices are stored in array of strings and 2D-Array.
+
+//where index name[0] is for TOI and newspaper[0][0] is for Monday's Price of TOI
 private:
     string name[5] = {"TOI", "Hindu", "ET", "BM", "HT"};
     float newspapers[5][7] = {
@@ -17,6 +22,7 @@ private:
 public:
     float weeklyCost[5];
 
+// function to calculate weekly total cost of a particular newspaper.
     void calculateTotalCost() {
         for (int i = 0; i < 5; i++) {
             float sum = 0;
@@ -31,6 +37,7 @@ public:
     }
 
 
+// function to print the combination of newspapers.
     void calculateWeekCost(float amount) {
         float tempAmount = amount;
         calculateTotalCost();
