@@ -57,7 +57,6 @@ int main() {
 
 
     int weeklyBudget;
-    vector <vector<string>> arr;
 
     cin >> weeklyBudget;
 
